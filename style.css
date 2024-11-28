@@ -29,3 +29,29 @@ body {
     width:  auto;
     height: 250px;
 }
+.boutonmenu ul {
+    list-style: none;
+}
+.boutonmenu{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+}
+.navmenu{
+    display: flex;
+    justify-content: space-around;
+    gap: 3px;
+}
+.bouton{
+    border: 2px solid black;
+    background-color: crimson;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.bouton:hover{
+    background-color: gold;
+    transition: 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
