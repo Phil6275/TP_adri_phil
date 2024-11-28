@@ -9,49 +9,75 @@ body {
     background-image: url("images/bg.jpg");
     background-position: center;
     background-size: cover;
+    font-family: sans-serif;
 }
 
 #blur {
     width: 100vw;
     height: 100%;
     backdrop-filter: blur(3px);
-    position: absolute;
+    position: fixed;
     z-index: -1;
 }
 
-.car_container div {
+.car_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 75%;
+    margin: 150px auto;
+    padding: 15px;
+}
+
+.car_container .car {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    text-align: center;
 }
 
-.car_container img {
-    width:  auto;
-    height: 250px;
+.car_container .car img {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
 }
+
 .boutonmenu ul {
     list-style: none;
 }
-.boutonmenu{
+
+.boutonmenu {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
     background-color: aqua;
 }
-.navmenu{
+
+.navmenu {
     display: flex;
     justify-content: space-around;
     gap: 3px;
+    width: fit-content;
+    margin: 0 auto;
 }
-.bouton{
+
+.boutonmenu > img {
+    height: max-content;
+    width: 75px;
+    margin: 5px;
+}
+
+.bouton {
     border: 2px solid black;
     background-color: crimson;
     padding: 4px;
     border-radius: 5px;
+    height: fit-content;
 }
 
-.bouton:hover{
+.bouton:hover {
     background-color: gold;
-    transition: 0.5s;
+    transition: 0.2s;
     transform: scale(1.1);
     cursor: pointer;
 }
