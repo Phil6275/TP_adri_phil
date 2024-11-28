@@ -1,0 +1,10 @@
+.car_container div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.car_container img {
+    width: 150px;
+    height: auto;
+}
